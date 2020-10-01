@@ -18,11 +18,11 @@ for i in range(len(ph_no)):
 ###########Edit Option Available Above###############
 
     button = driver.find_element_by_xpath('//*[@id="action-button"]')
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(2)
     ActionChains(driver).move_to_element(button).click(button).perform()
     
     driver.find_element_by_xpath('//*[@id="fallback_block"]/div/div/a').click()
-    time.sleep(5)
+    time.sleep(6)
 
 ###########Edit the code below###############
 #add your message here without removing the +'\n'
