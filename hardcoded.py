@@ -24,12 +24,12 @@ for i in range(len(ph_no)):
     ActionChains(driver).move_to_element(button).click(button).perform()
     
     driver.find_element_by_xpath('//*[@id="fallback_block"]/div/div/a').click()
-    time.sleep(8)
+    time.sleep(16)
 
 ###########Edit the code below###############
 #add your message here without removing the +'\n'
-    message = """test"""
-    link = "abc"
+    message = """ <drop your DM here>"""
+    link = """<drop your invite link here>"""
 ###########Edit the code above###############
 
     message += '\n'
@@ -38,7 +38,7 @@ for i in range(len(ph_no)):
     textBox.send_keys(message)
     time.sleep(2)
     textBox.send_keys(link)
-    time.sleep(3)
+    time.sleep(2)
     textBox.send_keys('\n')
     time.sleep(2)
 
